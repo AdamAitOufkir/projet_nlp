@@ -1,0 +1,153 @@
+{
+ "classification": {
+  "n_sms": 5574,
+  "part_spam": 0.134,
+  "n_train": 4459,
+  "n_test": 1115,
+  "spams_test": 149,
+  "confusion": {
+   "VP": 121,
+   "FP": 0,
+   "FN": 28,
+   "VN": 966
+  },
+  "modele": {
+   "Accuracy": 0.975,
+   "Précision": 1.0,
+   "Rappel": 0.812,
+   "F1": 0.896
+  },
+  "naif": {
+   "Accuracy": 0.866,
+   "Précision": 0.0,
+   "Rappel": 0.0,
+   "F1": 0.0
+  },
+  "seuils": [
+   {
+    "Seuil": 0.2,
+    "Accuracy": 0.978,
+    "Précision": 0.903,
+    "Rappel": 0.94,
+    "F1": 0.921
+   },
+   {
+    "Seuil": 0.3,
+    "Accuracy": 0.985,
+    "Précision": 0.971,
+    "Rappel": 0.913,
+    "F1": 0.941
+   },
+   {
+    "Seuil": 0.5,
+    "Accuracy": 0.975,
+    "Précision": 1.0,
+    "Rappel": 0.812,
+    "F1": 0.896
+   },
+   {
+    "Seuil": 0.7,
+    "Accuracy": 0.943,
+    "Précision": 1.0,
+    "Rappel": 0.577,
+    "F1": 0.732
+   }
+  ]
+ },
+ "traduction": {
+  "n_phrases": 100,
+  "bleu": 38.6,
+  "precisions": [
+   66.5,
+   45.0,
+   33.3,
+   25.1
+  ],
+  "bp": 0.971,
+  "sys_len": 2341,
+  "ref_len": 2410,
+  "exemple_jouet": {
+   "identique": 100.0,
+   "un mot change": 64.3,
+   "même sens, autres mots": 11.3,
+   "hors sujet": 6.6
+  },
+  "histogramme": [
+   12,
+   19,
+   19,
+   13,
+   11,
+   12,
+   8,
+   1,
+   0,
+   1
+  ],
+  "meilleure": {
+   "en": "A black box in your car?",
+   "marian": "Une boîte noire dans votre voiture ?",
+   "fr": "Une boîte noire dans votre voiture ?",
+   "bleu": 100.0
+  },
+  "pire": {
+   "en": "Previously Unpublished Tracks Released",
+   "marian": "Les pistes inédites publiées antérieurement",
+   "fr": "Des inédits déjà en écoute",
+   "bleu": 0.0
+  }
+ },
+ "resume": {
+  "n_articles": 30,
+  "mots_article": 563,
+  "mots_reference": 36,
+  "scores": {
+   "Aléatoire": {
+    "ROUGE-1": 24.2,
+    "ROUGE-2": 6.4,
+    "ROUGE-L": 15.0
+   },
+   "Lead-3": {
+    "ROUGE-1": 29.3,
+    "ROUGE-2": 10.8,
+    "ROUGE-L": 20.2
+   },
+   "TextRank": {
+    "ROUGE-1": 22.4,
+    "ROUGE-2": 5.9,
+    "ROUGE-L": 15.3
+   }
+  },
+  "mots_resumes": {
+   "Aléatoire": 59,
+   "Lead-3": 61,
+   "TextRank": 96
+  },
+  "rappel_precision_r1": {
+   "Aléatoire": {
+    "rappel": 34.4,
+    "precision": 19.4
+   },
+   "Lead-3": {
+    "rappel": 43.3,
+    "precision": 23.3
+   },
+   "TextRank": {
+    "rappel": 44.4,
+    "precision": 15.3
+   }
+  },
+  "exemple_jouet": {
+   "Two men were arrested by police after the Paris bank robbery.": {
+    "rouge1": 0.86,
+    "rouge2": 0.32,
+    "rougeL": 0.57
+   },
+   "The weather in Paris was sunny on Monday.": {
+    "rouge1": 0.33,
+    "rouge2": 0.12,
+    "rougeL": 0.33
+   }
+  }
+ }
+}

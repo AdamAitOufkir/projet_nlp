@@ -1,0 +1,8 @@
+.venv/
+models/
+__pycache__/
+.ipynb_checkpoints/
+presentation/*
+*.Zone.Identifier
+*:Zone.Identifier
+presentation/~$*
